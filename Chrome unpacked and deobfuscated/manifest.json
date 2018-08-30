@@ -1,0 +1,23 @@
+{
+   "background": {
+      "scripts": [ "lib.js", "jquery.min.js", "background.js", "ga.js" ]
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Расширение позволяет беспрепятственно заходить на заблокированные сайты",
+   "homepage_url": "http://fastproxy.online",
+   "browser_action": {
+        "default_icon": "icon-128-enabled.png",
+		"default_popup": "popup/popup.html"
+   },
+   "icons": {
+      "128": "icon-128-enabled.png",
+      "32": "icon-32.png",
+      "64": "icon-64.png"
+   },
+   "manifest_version": 2,
+   "name": "FastProxy - обход блокировки сайтов",
+   "permissions": [ "proxy", "tabs", "webRequest", "webRequestBlocking", "management", "\u003Call_urls>", "storage" ],
+   "short_name": "Fast Proxy",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "5.0.4"
+}
